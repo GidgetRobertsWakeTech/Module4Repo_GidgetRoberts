@@ -1,0 +1,189 @@
+/* 
+Colors used
+EF798A (Bright Pink)
+F7A9A8 (Light Pink)
+7D82B8 (blue)
+613F75 (Purple)
+E5C3D1 (Grey)
+*/
+
+/* Assignment reminder:
+- Make a copy of your Module3 folder and name it Module4 and use this copy for the assignment.
+- Correct any issues that may exist (if any).
+- Compete parts 3, 4 and 6 of the CSS Essentials Training (LinkedIn Learning).
+- Customize the page by modifying the colors, fonts, and positioning.
+- Take your heading text and style it with a text shadow or text effects to your liking (tutorials below).
+- Create a new GitHub repository for the Module4 folder and push your files to GitHub.
+- Submit a link to your updated GitHub repository.
+- Submit a link to your updated file on the WCET server.
+*/
+
+/* Global Styles (both pages) 
+https://www.paulirish.com/2012/box-sizing-border-bot-ftw/ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* sets default to 10 pixels */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+Body {
+    background-color: #F7A9A8;
+    font-family: "Quicksand", sans-serif;
+    margin: 0; 
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: "Ribeye Marrow", system-ui;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5.25rem;
+    line-height: 1.25;
+    text-shadow: 3px 3px 6px #613F75;
+}
+
+h2 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #613F75;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* global link */
+a {
+    color: #613F75;
+}
+a:hover {
+    color: #EF798A;
+    text-decoration: none;
+}
+footer a {
+    color: #7D82B8;
+}
+footer a:hover {
+    color: #613F75;
+    text-decoration: none;
+}
+
+.BTN {
+    background: #7D82B8;
+    color: #E5C3D1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 7px;
+    margin: 10px;
+}
+.BTN a:hover {
+    color: #613F75;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 7px;
+}
+.BTN:hover {
+    background: #EF798A;
+    color:#613F75;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px;
+}
+
+/* Home Page */
+.home {
+    background: url(../images/bg-sunset-ocean.jpg) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: rgb(229 195 209 / 0.85);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Resume Page */
+
+.resume header::before {
+    background: url(../images/bg-gradient.jpg) center;
+    background-size: cover;
+    content: "Pineapple";
+    display: block;
+    height: 250px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #613F75;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    bottom: 5px;
+    height: 35px;
+}
+
+.education-item {
+    margin: 30px 0;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Footer */
+footer {
+    background: #613F75;
+    color: #E5C3D1;
+    padding: 10px;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 32px;
+}
+
+img {
+    width: 300px;
+}
